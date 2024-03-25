@@ -1,0 +1,475 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    /* border: 1px solid black; */
+}
+
+body{
+    font-family: "Heebo", sans-serif;
+    
+}
+:root{
+    --main:rgb(254, 93, 55);
+    --blue:rgb(16, 55, 65);
+    --lob:"Lobster Two", sans-serif;
+}
+.btn{
+    background-color: var(--main);
+    color: #eee;
+}
+.btn:hover{
+    background-color: var(--main);
+}
+
+/* start navbar */
+.navbar-brand{
+    color: var(--main);
+    font-size: 40px;
+    font-family: var(--lob);
+    font-weight: 700;
+}
+.navbar-brand:hover{
+    color: var(--main);
+}
+.nav-link:hover{
+    color: var(--main);
+}
+.nav-link {
+    font-weight: 600;
+}
+.navbar .navbar-toggler{
+    color: var(--main);
+    border-color: var(--main);
+  } 
+  .navbar .navbar-toggler:focus{
+    box-shadow: none;
+  }
+  .navbar{
+    position: fixed;
+    background-color: #ffffff;
+    z-index: 4;
+    width: 100%;
+    box-shadow: 0px 0px 2px rgb(205, 202, 202);
+  }
+
+/* end navbar */
+/* start header */
+header{
+    background-image: url(../img/carousel-1.jpg);
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+    animation: slider 7s infinite;
+    animation-direction : alternate;
+}
+@keyframes slider{
+    0%{
+        background-image: url(../img/carousel-1.jpg);
+    }
+    50%{
+        background-image: url(../img/carousel-2.jpg);
+    }
+}
+.top-header{
+    height: 10px;
+    background-image: url(../img/bg-header-top.png);
+    background-position: center;
+    background-repeat:repeat-x;
+   
+}
+.bot-header{
+    height: 20px;
+    background-image: url(../img/bg-header-bottom.png);
+    background-position: center;
+    background-repeat:repeat-x;
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+}
+header h2{
+    font-size: 60px;
+    font-weight: 600;
+    font-family: var(--lob);
+    text-transform: capitalize;
+    color: #eee;
+}
+header p{
+    color: #eee;
+    font-size: 20px;
+}
+.sec-btn{
+    background-color: rgb(16, 55, 65);
+    margin-left: 30px;
+}
+  .fa-arrow-up{
+    font-size: 25px;
+    background-color: var(--main);
+    position: fixed;
+    bottom: 10%;
+    right: 3%;
+    border-radius: 50%;
+    padding: 10px;
+    color: #eee;
+}  
+/* end header */
+/* satrt facilities */
+.top-fac h3{
+    color: var(--blue);
+    font-size: 40px;
+    font-family: var(--lob);
+    font-weight: 600;
+}
+.fac-content{
+    line-height: 2;
+    margin-top: 30px;
+}
+.fac-content:hover{
+    box-shadow: 0px 0px 5px var(--main);
+    border-radius: 10px;
+    
+}
+.main-fac h4{
+   font-family: var(--lob);
+   font-weight: 600;
+   font-size: 28px;
+}
+.fa-bus{
+    color: var(--main);
+    font-size: 50px;
+   
+}
+.bus{
+    color: var(--main);
+
+}
+.fa-futbol{
+    color: rgb(25, 135, 84);
+    font-size: 50px;
+
+}
+.ball{
+    color: rgb(25, 135, 84);
+
+}
+.fa-house-chimney{
+    color: rgb(255, 193, 7);
+    font-size: 50px;
+}
+.shop{
+    color: rgb(255, 193, 7);
+
+}
+.learn{
+    color:rgb(13, 202, 240);
+
+}
+.fa-desktop{
+    color:rgb(13, 202, 240);
+    font-size: 50px;
+}
+/* end facilities */
+/* start about */
+.left-about h3{
+font-family: var(--lob);
+color: var(--blue);
+margin-top: 10%;
+font-weight: 700;
+font-size: 40px;
+}
+.left-about p{
+    margin-top: 20px;
+    color: rgb(159, 149, 136);
+    line-height: 2;
+}
+.about-1{
+    border-radius: 50%;
+    border: 20px solid #eee;
+}
+.right-about{
+    position: relative;
+}
+.about-2{
+    border-radius: 50%;
+    position: absolute;
+    bottom: -50px;
+    left: 20px;
+    border: 20px solid #eee;
+
+
+}
+.about-3{
+    border-radius: 50%;
+    position: absolute;
+    bottom: -50px;
+    right: 20px;
+    border: 20px solid #eee;
+}
+.about-1:hover{
+    border: 20px solid var(--main);}
+
+  .about-2:hover{
+    border: 20px solid var(--main);}
+
+  .about-3:hover{
+    border: 20px solid var(--main);
+
+}
+.become{
+background-color: rgb(255, 245, 243);
+border-top-left-radius: 20px;
+border-bottom-left-radius: 20px;
+border-radius: 20px;
+}
+.become-left{
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+.become-right{
+    padding: 5%;
+    line-height: 2;
+}
+.become-right h3{
+    font-family: var(--lob);
+    font-weight: 600;
+    font-size: 40px;
+    margin-top: 5%;
+}
+/* end about */
+/* start classes */
+
+.user{
+    border-radius: 50%;
+    width: 18%;
+
+}
+.class-data{
+    background-color:rgb(255, 245, 243) ;
+    padding: 30px;
+}
+.top-class h3{
+    font-family: var(--lob);
+    font-size: 40px;
+    font-weight: 700;
+    color: var(--blue);
+}
+.top-class p{
+    color: rgb(159, 149, 136);
+
+}
+ 
+.class-pic{
+    border-radius: 50%;
+    border: 20px solid  rgb(255, 245, 243);
+    width: 75%;
+    margin-bottom: -15%;
+   
+}
+.class-data span{
+    color: var(--main);
+    font-weight: 900;
+    margin-right: 20px;
+}
+.class-data .cost{
+background-color: var(--main);
+border-radius: 20px;
+padding: 10px;
+color: #eee;
+margin-left: 10%;
+}
+.class-data .age{
+    color: var(--main);
+    border-top: 3px solid var(--main);
+    margin-top: 20px;
+    padding: 10px;
+    
+}
+.class-data .time{
+    color: var(--main);
+    border-top: 3px solid rgb(25, 135, 84);
+    margin-top: 20px;
+    padding: 10px;
+}
+.class-data .cap{
+    color: var(--main);
+    border-top: 3px solid rgb(255, 193, 7);
+    margin-top: 20px;
+    padding: 10px;
+}
+.class-data h4{
+    font-family: var(--lob);
+    color: var(--blue);
+    font-weight: 600;
+    font-size: 30px;
+}
+.main-class{
+    transition: scale 2s;
+}
+.main-class:hover{
+    scale: 1.05;
+
+    
+   
+}
+/* end classes */
+/* start contact */
+.contact{
+    background-color: rgb(255, 245, 243);
+    border-radius: 20px;
+}
+.left-contact{
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+.right-contact img{
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+form{
+    padding: 20px;
+}
+form h3{
+    font-family: var(--lob);
+    font-weight: 600;
+    font-size: 35px;
+    color: var(--blue);
+}
+/* end contact */
+/* start teach */
+.top-teacher h3{
+    font-family: var(--lob);
+    font-size: 40px;
+    font-weight: 700;
+    color: var(--blue);
+}
+.top-teacher p{
+    color:rgb(159, 149, 136) ;
+}
+.main-teach img{
+    border-radius: 50%;
+    width: 75%;
+}
+.main-teach{
+    position: relative;
+    margin-top: 50px;
+}
+.teach-content{
+    border: 20px solid rgb(255, 245, 243);
+    border-radius: 50%;
+    position: absolute;
+    bottom: 0px;
+    right: 30px;
+    padding: 30px;
+    background-color: #ffffff;
+    line-height: 2;
+
+}
+.main-teach:hover .teach-content{
+    border: 20px solid var(--main);
+
+}
+.teach-content h4{
+    font-family: var(--lob);
+    font-size: 30px;
+    font-weight: 600;
+    color: var(--blue);
+}
+.teach-content i{
+    font-size: 30px;
+    color: var(--main);
+    padding: 5px;
+}
+
+/* end teach */
+/* start reviews */
+.top-reviews h3{
+    font-family: var(--lob);
+    font-size: 40px;
+    font-weight: 700;
+    color: var(--blue);
+}
+.top-reviews p{
+    color:rgb(159, 149, 136) ;
+}
+.carousel-control-prev{
+background-color: var(--main);
+border-radius: 50%;
+height: 50px;
+width: 50px;
+margin-top: 10%;
+}
+.carousel-control-next{
+    background-color: var(--main);
+border-radius: 50%;
+height: 50px;
+width: 50px;
+margin-top: 10%;
+
+}
+
+.rev-content{
+    background-color: rgb(255, 245, 243) ;
+    padding: 20px;
+    border-radius: 15px;
+   
+}
+.rev-content h5{
+    font-family: var(--lob);
+    font-size: 30px;
+    font-weight: 600;
+    color: var(--blue);
+}
+.rev-content p{
+    font-size: 20px;
+    color:rgb(96, 93, 89) ;
+    margin-top: 20px;
+
+}
+.rev-content img{
+    border-radius: 50%;
+}
+.clint-data{
+    display: flex;
+    background-color: #ffffff;
+    padding: 10px;
+    border-radius: 30px;
+}
+.clint-data i{
+    font-size:70px;
+    color: var(--main);
+   
+}
+/* end reviews */
+/* start footer */
+footer{
+    background-color: rgb(16, 55, 65);
+    margin-top: 50px;
+    padding-top: 50px;
+    color: rgb(135, 155, 160);
+}
+footer h4{
+    color: #eee;
+    font-family: var(--lob);
+    font-size: 30px;
+    font-weight: 600;
+    padding-bottom: 10px;
+
+}
+footer ul{
+    list-style-type: none;
+    line-height: 2;
+}
+footer img{
+    border-radius: 10px;
+    border: 5px solid #eee;
+    margin-bottom: 15px;
+}
+footer .fa-brands{
+    color: #eee;
+    font-size: 25px;
+    padding: 5px;
+}
+footer span{
+    color: #eee;
+}
+/* end footer */
